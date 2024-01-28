@@ -1,0 +1,14 @@
+controller_list:
+  - name: snake_robot_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - cabeza_motor1
+      - motor1_cuerpo1
+      - cuerpo1_motor2
+      - motor2_cuerpo2
+      - cuerpo2_motor3
+      - motor3_cuerpo3
+      - cuerpo3_motor4
+      - motor4_cola

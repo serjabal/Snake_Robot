@@ -1,0 +1,15 @@
+controller_list:
+  - name: fake_snake_robot_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - cabeza_motor1
+      - motor1_cuerpo1
+      - cuerpo1_motor2
+      - motor2_cuerpo2
+      - cuerpo2_motor3
+      - motor3_cuerpo3
+      - cuerpo3_motor4
+      - motor4_cola
+initial:  # Define initial robot poses per group
+  - group: snake_robot
+    pose: home

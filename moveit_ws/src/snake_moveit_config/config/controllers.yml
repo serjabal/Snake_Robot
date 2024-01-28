@@ -1,0 +1,33 @@
+controller list:
+  - name: /snake/joint1_position_controller 
+    action ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory
+    joints: ["cabeza_motor1"]
+  - name: /snake/joint2_position_controller 
+    action_ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory 
+    joints: ["motor1_cuerpo1"]
+  - name: /snake/joint3_position_controller 
+    action ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory 
+    joints: ["cuerpo1_motor2"]
+  - name: /snake/joint4_position_controller 
+    action ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory 
+    joints: ["motor2_cuerpo2"]
+  - name: /snake/joint5_position_controller 
+    action ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory 
+    joints: ["cuerpo2_motor3"]
+  - name: /snake/joint6_position_controller 
+    action ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory 
+    joints: ["motor3_cuerpo3"]
+  - name: /snake/joint7_position_controller 
+    action ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory 
+    joints: ["cuerpo3_motor4"]
+  - name: /snake/joint8_position_controller 
+    action ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory 
+    joints: ["motor4_cola"]

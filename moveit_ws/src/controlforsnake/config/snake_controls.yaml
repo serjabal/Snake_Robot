@@ -1,0 +1,54 @@
+snake:
+  #Publish all joint states
+  joint state controller:
+    type: joint_state_controller/JointStatecontroller 
+    publish_rate: 50
+  
+  # Position Controllers
+  joint1_position_controller:
+    type: effort controllers/JointTrajectoryController 
+    joints: [cabeza_motor1]
+    gains:
+      Joint1: {p: 100.0, 1: 0.05, d: 10.0} 
+
+  joint2_position_controller:
+    type: effort controllers/JointTrajectoryController 
+    joints: [motor1_cuerpo1]
+    gains:
+      motor1_cuerpo1: {p: 100.0, 1: 0.05, d: 10.0} 
+
+  joint3_position_controller:
+    type: effort controllers/JointTrajectoryController 
+    joints: [cuerpo1_motor2]
+    gains:
+      cuerpo1_motor2: {p: 100.0, 1: 0.05, d: 10.0} 
+
+  joint4_position_controller:
+    type: effort controllers/JointTrajectoryController 
+    joints: [motor2_cuerpo2]
+    gains:
+      motor2_cuerpo2: {p: 100.0, 1: 0.05, d: 10.0} 
+
+  joint5_position_controller:
+    type: effort controllers/JointTrajectoryController 
+    joints: [cuerpo2_motor3]
+    gains:
+      cuerpo2_motor3: {p: 100.0, 1: 0.05, d: 10.0} 
+
+  joint6_position_controller:
+    type: effort controllers/JointTrajectoryController 
+    joints: [motor3_cuerpo3]
+    gains:
+      motor3_cuerpo3: {p: 100.0, 1: 0.05, d: 10.0} 
+
+  joint7_position_controller:
+    type: effort controllers/JointTrajectoryController 
+    joints: [cuerpo3_motor4]
+    gains:
+      cuerpo3_motor4: {p: 100.0, 1: 0.05, d: 10.0} 
+
+  joint8_position_controller:
+    type: effort controllers/JointTrajectoryController 
+    joints: [motor4_cola]
+    gains:
+      motor4_cola: {p: 100.0, 1: 0.05, d: 10.0} 

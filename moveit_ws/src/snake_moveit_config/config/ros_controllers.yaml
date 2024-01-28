@@ -1,0 +1,52 @@
+snake_robot_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - cabeza_motor1
+    - motor1_cuerpo1
+    - cuerpo1_motor2
+    - motor2_cuerpo2
+    - cuerpo2_motor3
+    - motor3_cuerpo3
+    - cuerpo3_motor4
+    - motor4_cola
+  gains:
+    cabeza_motor1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    motor1_cuerpo1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    cuerpo1_motor2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    motor2_cuerpo2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    cuerpo2_motor3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    motor3_cuerpo3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    cuerpo3_motor4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    motor4_cola:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

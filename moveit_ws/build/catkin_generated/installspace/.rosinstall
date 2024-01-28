@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/sergio/moveit_ws/install/setup.sh

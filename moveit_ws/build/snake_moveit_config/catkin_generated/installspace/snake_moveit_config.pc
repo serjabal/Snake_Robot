@@ -1,0 +1,8 @@
+prefix=/home/sergio/moveit_ws/install
+
+Name: snake_moveit_config
+Description: Description of snake_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
